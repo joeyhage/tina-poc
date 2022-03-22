@@ -842,6 +842,15 @@
     relay-compiler "12.0.0"
     tslib "~2.3.0"
 
+"@graphql-tools/relay-operation-optimizer@^6.4.1":
+  version "6.4.3"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.4.3.tgz#81bf82ccc7653230d41b850080895cbfb5a6b2d7"
+  integrity sha512-whgh2jlZZ4fbOqCMIfGxEplxNXBOXj1I9A8TMsKFrMaLWcy8q1YjBbNQgr7nTz34SERvlIHinjgLy3QAYiXYLg==
+  dependencies:
+    "@graphql-tools/utils" "8.6.3"
+    relay-compiler "12.0.0"
+    tslib "~2.3.0"
+
 "@graphql-tools/schema@8.3.1", "@graphql-tools/schema@^8.1.2":
   version "8.3.1"
   resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-8.3.1.tgz#1ee9da494d2da457643b3c93502b94c3c4b68c74"
@@ -856,6 +865,13 @@
   version "8.5.3"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.5.3.tgz#404062e62cae9453501197039687749c4885356e"
   integrity sha512-HDNGWFVa8QQkoQB0H1lftvaO1X5xUaUDk1zr1qDe0xN1NL0E/CrQdJ5UKLqOvH4hkqVUPxQsyOoAZFkaH6rLHg==
+  dependencies:
+    tslib "~2.3.0"
+
+"@graphql-tools/utils@8.6.3":
+  version "8.6.3"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.6.3.tgz#ce9fc9adce4d45b229e314a2261290a88a252aed"
+  integrity sha512-CNyP7Uu7dlVMQ32IpHWOxz4yic9BYXXVkDhG0UdTKSszvzHdgMilemE9MpUrGzzBPsTe3aYTtNGyPUkyh9yTXA==
   dependencies:
     tslib "~2.3.0"
 
@@ -1371,10 +1387,10 @@
   resolved "https://registry.yarnpkg.com/@sambego/storybook-styles/-/storybook-styles-1.0.0.tgz#4f840ee26dd0b25dcb803a75caa42e16071dcaae"
   integrity sha512-n0SqZwDewUDRaStEcoNMiYy9qovaLVStsh4Gb2dc2LLiG3IIK0UXdeR1N7puVuRihJq/192uOyGPCjZ/NAteuA==
 
-"@tinacms/cli@^0.60.6":
-  version "0.60.6"
-  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-0.60.6.tgz#c4234b9ab04a782291a58fde26f5f610f46b027d"
-  integrity sha512-pdNy7LbVC/tjSRCLLjbIRbUqTuB1Ck1PGRLze3zSPt1TyXEcbRHdHOkAKEOWVPBmqVoSzA/aNap/rT00sLBXGA==
+"@tinacms/cli@^0.60.9":
+  version "0.60.9"
+  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-0.60.9.tgz#b1be6e0a8d58bd93b55931dc3440e86c11d641ac"
+  integrity sha512-JWnSEMTZpmrvxma6lEjz/ag47f2TLI8u+gVVs76t/Yg+Gz4OR6XYuj18IFg4+VBBvMszTPw1UkYF0PSnBIHUWg==
   dependencies:
     "@graphql-codegen/core" "^2.1.0"
     "@graphql-codegen/plugin-helpers" latest
@@ -1385,7 +1401,7 @@
     "@graphql-tools/graphql-file-loader" "^7.2.0"
     "@graphql-tools/load" "^7.3.2"
     "@tinacms/datalayer" "0.0.2"
-    "@tinacms/graphql" "0.59.7"
+    "@tinacms/graphql" "0.59.8"
     "@tinacms/metrics" "0.0.2"
     "@yarnpkg/esbuild-plugin-pnp" "^2.0.1-rc.3"
     add "^2.0.6"
@@ -1436,11 +1452,12 @@
     prettier "^2.2.1"
     yup "^0.32.9"
 
-"@tinacms/graphql@0.59.7":
-  version "0.59.7"
-  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-0.59.7.tgz#8fed566067af7b80e84d099cc8cd0dbff4014865"
-  integrity sha512-2nuIwbg2GL2l81OdbLHYAlKrwvAKW8Q4Qc4kAM0sQaLwo+cT3ZjvsdE9MrfSf+HrVwAW3pLTJt4Sd132SH53IA==
+"@tinacms/graphql@0.59.8":
+  version "0.59.8"
+  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-0.59.8.tgz#cf073a4cf56b917e3010aadb1c2694b8afa657bb"
+  integrity sha512-lOZHoR1W3VkO7uugZOkqhUds04eU70CEf2U9lUkd4H/ofFhUmdwoHP+G+SEUqDjfb0CgJ6KtQWJEVT0SPJUthQ==
   dependencies:
+    "@graphql-tools/relay-operation-optimizer" "^6.4.1"
     body-parser "^1.19.0"
     cors "^2.8.5"
     dataloader "^2.0.0"
